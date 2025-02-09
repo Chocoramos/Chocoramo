@@ -1,9 +1,9 @@
-temp = ""
-def hola():
-    global temp
-    list=['H','o','l','a', "s"]
-    for i in list:
-        temp += i
-    
-    print(temp)
-hola()
+import random
+a = ""
+b = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+c = int(input("Escriba la longitud de la contraseña: "))
+
+for i in range(c):
+    a += random.choice(b)
+print("Contraseña generada:", a)
+ 
